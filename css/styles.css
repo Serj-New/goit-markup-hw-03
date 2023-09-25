@@ -42,9 +42,23 @@ section {
     padding: 120px 0;
 }
 
-.container { 
-    width: 1128px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
     padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.container { 
+    width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -83,6 +97,7 @@ section {
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -145,6 +160,7 @@ section {
 
 .hero-button {
     display: block;
+    min-width: 169px;
     margin: 48px auto 0;
     padding: 16px 32px;
     font-family: "Roboto", sans-serif;
@@ -300,14 +316,16 @@ margin-bottom: 8px;
 
 .footer {
     background: #2E2F42;
-}
-
-.footer-wrap {
     padding: 100px 0;
 }
 
+.footer-wrap {
+    
+}
+
 .footer .logo {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .light-logo {
